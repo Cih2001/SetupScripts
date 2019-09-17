@@ -127,10 +127,16 @@ _install_development () {
 	install_go
 }
 
+_install_config_files () {
+	cp .vimrc ~/.vimrc
+	cp .tmux.conf ~/.tmux.conf
+}
+
 # Install packages for development machine
 install_development () {
 	install_ubuntu_essentials
 	_install_development
+	_install_config_files
 }
 
 # Install packages for detection machine

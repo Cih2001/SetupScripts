@@ -115,16 +115,20 @@ install_cpuid () {
 	log "[cpuid] Installing ..."
         yes | sudo apt install cpuid &>> $OUTPUT
 }
+
+install_cross_compile_arm() {
+   sudo apt-get install gcc-arm-linux-gnueabihf binutils-arm-linux-gnueabi 
+
+}
+
 _install_detection () {
 	install_nmap
 }
 
 _install_development () {
 	install_build
-	install_code
 	install_curl
 	install_pip
-	install_go
 }
 
 _install_config_files () {

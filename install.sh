@@ -58,8 +58,14 @@ install_ubuntu_essentials () {
 	log "[net-tools] Installing ..."
 	yes | sudo apt install net-tools &>> $OUTPUT
 
-	log "[terminator] Installing ..."
-	yes | sudo apt install terminator &>> $OUTPUT
+	log "[tmux] Installing ..."
+	yes | sudo apt install tmux &>> $OUTPUT
+
+	log "[vim] Installing ..."
+	yes | sudo apt install vim &>> $OUTPUT
+
+	log "[xclip] Installing ..."
+	yes | sudo apt install xclip &>> $OUTPUT
 
 	log "[gnome-tweaks] Installing ..."
 	yes | sudo apt install gnome-tweaks &>> $OUTPUT
@@ -117,7 +123,7 @@ install_cpuid () {
 }
 
 install_cross_compile_arm() {
-   sudo apt-get install gcc-arm-linux-gnueabihf binutils-arm-linux-gnueabi 
+   yes | sudo apt-get install gcc-arm-linux-gnueabihf binutils-arm-linux-gnueabi 
 
 }
 

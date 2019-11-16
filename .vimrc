@@ -14,7 +14,7 @@ set wildmenu
 command! Wq :wq
 command! W :w
 
-set shiftwidth=4 softtabstop=4 expandtab
+set shiftwidth=4 softtabstop=4 tabstop=4 expandtab
 
 set rnu
 set nu

@@ -22,7 +22,6 @@ set nu
 set showcmd
 set autoindent
 set laststatus=2
-set statusline=%f%m%r%h%w\ [%Y]\ [0x%02.2B]%<\ %F%4v,%4l\ %3p%%\ of\ %L\ lines
 
 " Golang specific settings
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -108,3 +107,4 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 " disable vim-go :GoDef short cut (gd)
 " this is handled by LanguageClient [LC]
 let g:go_def_mapping_enabled = 0
+

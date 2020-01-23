@@ -24,6 +24,7 @@ yes | sudo apt-get install git tmux vim xclip curl yarn nodejs &>> $OUTPUT
 # sudo tar -C /usr/local -xzf /tmp/go.tar.gz &>> $OUTPUT
 # export PATH=$PATH:/usr/local/go/bin
 # echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
+# echo "export GO111MODULE=on" >> ~/.bashrc
 
 git clone https://github.com/vim-airline/vim-airline ~/.vim/pack/dist/start/vim-airline
 git clone https://github.com/tpope/vim-fugitive.git ~/.vim/pack/dist/start/vim-fugitive

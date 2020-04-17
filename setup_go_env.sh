@@ -20,10 +20,10 @@ yes | sudo apt-get install git tmux vim xclip curl yarn nodejs &>> $OUTPUT
 
 # Installing Go
 # log "[go 1.12.7] Installing ..."
-# wget -O /tmp/go.tar.gz https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz &>> $OUTPUT
-# sudo tar -C /usr/local -xzf /tmp/go.tar.gz &>> $OUTPUT
-# export PATH=$PATH:/usr/local/go/bin
-# echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
+ wget -O /tmp/go.tar.gz https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz &>> $OUTPUT
+ sudo tar -C /usr/local -xzf /tmp/go.tar.gz &>> $OUTPUT
+ export PATH=$PATH:/usr/local/go/bin
+ echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
 # echo "export GO111MODULE=on" >> ~/.bashrc
 
 git clone https://github.com/vim-airline/vim-airline ~/.vim/pack/dist/start/vim-airline
